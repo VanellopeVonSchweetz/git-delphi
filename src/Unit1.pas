@@ -50,6 +50,7 @@ type
     procedure N3Click(Sender: TObject);
     procedure N11Click(Sender: TObject);
     procedure N21Click(Sender: TObject);
+    procedure N31Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -61,7 +62,7 @@ var
 
 implementation
 
-uses Unit2, Unit3;
+uses Unit2, Unit3, Unit4;
 
 {$R *.dfm}
 
@@ -89,6 +90,11 @@ end;
 procedure TForm1.N21Click(Sender: TObject);
 begin
 Form3.Show;
+end;
+
+procedure TForm1.N31Click(Sender: TObject);
+begin
+Form4.Show;
 end;
 
 end.
