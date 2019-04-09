@@ -1,8 +1,8 @@
 object Form2: TForm2
-  Left = 175
-  Top = 117
+  Left = 151
+  Top = 225
   Width = 1148
-  Height = 633
+  Height = 592
   Caption = 'Form2'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -103,7 +103,7 @@ object Form2: TForm2
     Left = 0
     Top = 162
     Width = 1132
-    Height = 432
+    Height = 391
     Align = alClient
     TabOrder = 2
     TitleFont.Charset = DEFAULT_CHARSET
@@ -115,18 +115,19 @@ object Form2: TForm2
       item
         Expanded = False
         FieldName = #1050#1086#1076
+        Width = 101
         Visible = True
       end
       item
         Expanded = False
         FieldName = #1053#1072#1079#1074#1072#1085#1080#1077
-        Width = 128
+        Width = 260
         Visible = True
       end
       item
         Expanded = False
         FieldName = #1042#1080#1076
-        Width = 129
+        Width = 260
         Visible = True
       end
       item
@@ -138,13 +139,13 @@ object Form2: TForm2
       item
         Expanded = False
         FieldName = #1062#1077#1085#1072' '#1079#1072#1082#1091#1087#1082#1080'\'#1096#1090
-        Width = 96
+        Width = 178
         Visible = True
       end
       item
         Expanded = False
         FieldName = #1062#1077#1085#1072' '#1088#1086#1079#1085#1080#1094#1099'\'#1096#1090
-        Width = 103
+        Width = 193
         Visible = True
       end>
   end
