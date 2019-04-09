@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 103
-  Top = 110
+  Left = 188
+  Top = 257
   Width = 1150
   Height = 602
   Caption = 'Form1'
@@ -67,11 +67,11 @@ object Form1: TForm1
     end
     object Image1: TImage
       Left = 720
-      Top = 0
+      Top = 8
       Width = 249
-      Height = 193
+      Height = 185
     end
-    object ComboBox1: TComboBox
+    object ComboView: TComboBox
       Left = 48
       Top = 24
       Width = 145
@@ -79,7 +79,7 @@ object Form1: TForm1
       ItemHeight = 13
       TabOrder = 0
     end
-    object ComboBox2: TComboBox
+    object ComboType: TComboBox
       Left = 248
       Top = 24
       Width = 145
@@ -87,7 +87,7 @@ object Form1: TForm1
       ItemHeight = 13
       TabOrder = 1
     end
-    object ComboBox3: TComboBox
+    object ComboNamee: TComboBox
       Left = 480
       Top = 24
       Width = 145
@@ -95,21 +95,21 @@ object Form1: TForm1
       ItemHeight = 13
       TabOrder = 2
     end
-    object Edit1: TEdit
+    object EditAmount: TEdit
       Left = 88
       Top = 64
       Width = 105
       Height = 21
       TabOrder = 3
     end
-    object Edit2: TEdit
+    object EditPrice: TEdit
       Left = 88
       Top = 104
       Width = 105
       Height = 21
       TabOrder = 4
     end
-    object Button5: TButton
+    object ButtonSave: TButton
       Left = 496
       Top = 136
       Width = 75
@@ -183,7 +183,7 @@ object Form1: TForm1
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 1
-      object Button4: TButton
+      object ButtonDel1: TButton
         Left = 166
         Top = 0
         Width = 75
@@ -191,7 +191,7 @@ object Form1: TForm1
         Caption = #1059#1076#1072#1083#1080#1090#1100
         TabOrder = 0
       end
-      object Button2: TButton
+      object ButtonChange: TButton
         Left = 83
         Top = 0
         Width = 75
@@ -199,7 +199,7 @@ object Form1: TForm1
         Caption = #1048#1079#1084#1077#1085#1080#1090#1100
         TabOrder = 1
       end
-      object Button1: TButton
+      object ButtonAdd: TButton
         Left = 3
         Top = 0
         Width = 75
@@ -265,7 +265,7 @@ object Form1: TForm1
       Height = 26
       Align = alTop
       TabOrder = 1
-      object Button8: TButton
+      object ButtonDel2: TButton
         Left = -2
         Top = 0
         Width = 75
@@ -302,6 +302,7 @@ object Form1: TForm1
       Caption = #1057#1087#1088#1072#1074#1086#1095#1085#1080#1082#1080
       object N11: TMenuItem
         Caption = #1058#1086#1074#1072#1088#1099
+        OnClick = N11Click
       end
       object N21: TMenuItem
         Caption = #1057#1086#1090#1088#1091#1076#1085#1080#1082#1080

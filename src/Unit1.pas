@@ -23,31 +23,32 @@ type
     N7: TMenuItem;
     N8: TMenuItem;
     GroupBox1: TGroupBox;
-    ComboBox1: TComboBox;
-    ComboBox2: TComboBox;
+    ComboView: TComboBox;
+    ComboType: TComboBox;
     Label2: TLabel;
     Label1: TLabel;
     Label3: TLabel;
-    ComboBox3: TComboBox;
+    ComboNamee: TComboBox;
     Label4: TLabel;
-    Edit1: TEdit;
+    EditAmount: TEdit;
     Label5: TLabel;
-    Edit2: TEdit;
-    Button5: TButton;
+    EditPrice: TEdit;
+    ButtonSave: TButton;
     Image1: TImage;
     GroupBox2: TGroupBox;
     DBGrid2: TDBGrid;
     GroupBox3: TGroupBox;
     DBGrid1: TDBGrid;
     Panel1: TPanel;
-    Button4: TButton;
-    Button2: TButton;
-    Button1: TButton;
+    ButtonDel1: TButton;
+    ButtonChange: TButton;
+    ButtonAdd: TButton;
     Panel2: TPanel;
-    Button8: TButton;
+    ButtonDel2: TButton;
     Splitter1: TSplitter;
     procedure Button1Click(Sender: TObject);
     procedure N3Click(Sender: TObject);
+    procedure N11Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -58,6 +59,8 @@ var
   Form1: TForm1;
 
 implementation
+
+uses Unit2;
 
 {$R *.dfm}
 
@@ -74,6 +77,12 @@ end;
 procedure TForm1.N3Click(Sender: TObject);
 begin
 Close;
+end;
+
+procedure TForm1.N11Click(Sender: TObject);
+begin
+Form2.Show;
+
 end;
 
 end.
