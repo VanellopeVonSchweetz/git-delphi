@@ -36,7 +36,6 @@ type
     ButtonSave: TButton;
     Image1: TImage;
     GroupBox2: TGroupBox;
-    DBGrid2: TDBGrid;
     GroupBox3: TGroupBox;
     DBGrid1: TDBGrid;
     Panel1: TPanel;
@@ -46,11 +45,14 @@ type
     Panel2: TPanel;
     ButtonDel2: TButton;
     Splitter1: TSplitter;
+    DBGrid2: TDBGrid;
+    dsQuery3: TDataSource;
     procedure Button1Click(Sender: TObject);
     procedure N3Click(Sender: TObject);
     procedure N11Click(Sender: TObject);
     procedure N21Click(Sender: TObject);
     procedure N31Click(Sender: TObject);
+    procedure N5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -62,7 +64,7 @@ var
 
 implementation
 
-uses Unit2, Unit3, Unit4;
+uses Unit2, Unit3, Unit4, Unit5;
 
 {$R *.dfm}
 
@@ -95,6 +97,11 @@ end;
 procedure TForm1.N31Click(Sender: TObject);
 begin
 Form4.Show;
+end;
+
+procedure TForm1.N5Click(Sender: TObject);
+begin
+Form5.Show;
 end;
 
 end.

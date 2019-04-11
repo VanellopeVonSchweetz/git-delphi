@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 168
-  Top = 135
-  Width = 1150
+  Left = 189
+  Top = 93
+  Width = 1153
   Height = 602
   Caption = 'Form1'
   Color = clBtnFace
@@ -15,7 +15,7 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object Splitter1: TSplitter
-    Left = 663
+    Left = 666
     Top = 0
     Width = 15
     Height = 342
@@ -25,7 +25,7 @@ object Form1: TForm1
   object GroupBox1: TGroupBox
     Left = 0
     Top = 342
-    Width = 1134
+    Width = 1137
     Height = 201
     Align = alBottom
     Caption = #1058#1086#1074#1072#1088#1085#1072#1103' '#1087#1086#1079#1080#1094#1080#1103
@@ -54,9 +54,9 @@ object Form1: TForm1
     object Label4: TLabel
       Left = 8
       Top = 64
-      Width = 65
+      Width = 59
       Height = 13
-      Caption = #1050#1086#1083#1083#1080#1095#1077#1089#1090#1074#1086
+      Caption = #1050#1086#1083#1080#1095#1077#1089#1090#1074#1086
     end
     object Label5: TLabel
       Left = 8
@@ -121,68 +121,19 @@ object Form1: TForm1
   object GroupBox2: TGroupBox
     Left = 0
     Top = 0
-    Width = 663
+    Width = 666
     Height = 342
     Align = alClient
     Caption = #1055#1086#1079#1080#1094#1080#1080
     TabOrder = 1
-    object DBGrid2: TDBGrid
-      Left = 2
-      Top = 41
-      Width = 659
-      Height = 299
-      Align = alClient
-      TabOrder = 0
-      TitleFont.Charset = DEFAULT_CHARSET
-      TitleFont.Color = clWindowText
-      TitleFont.Height = -11
-      TitleFont.Name = 'MS Sans Serif'
-      TitleFont.Style = []
-      Columns = <
-        item
-          Expanded = False
-          Title.Alignment = taCenter
-          Title.Caption = #1050#1086#1076
-          Width = 65
-          Visible = True
-        end
-        item
-          Expanded = False
-          Title.Alignment = taCenter
-          Title.Caption = #1058#1086#1074#1072#1088
-          Width = 232
-          Visible = True
-        end
-        item
-          Expanded = False
-          Title.Alignment = taCenter
-          Title.Caption = #1050#1086#1083#1083#1080#1095#1077#1089#1090#1074#1086
-          Width = 82
-          Visible = True
-        end
-        item
-          Expanded = False
-          Title.Alignment = taCenter
-          Title.Caption = #1062#1077#1085#1072
-          Width = 81
-          Visible = True
-        end
-        item
-          Expanded = False
-          Title.Alignment = taCenter
-          Title.Caption = #1054#1089#1090#1072#1090#1086#1082
-          Width = 71
-          Visible = True
-        end>
-    end
     object Panel1: TPanel
       Left = 2
       Top = 15
-      Width = 659
+      Width = 662
       Height = 26
       Align = alTop
       BevelOuter = bvNone
-      TabOrder = 1
+      TabOrder = 0
       object ButtonDel1: TButton
         Left = 166
         Top = 0
@@ -208,9 +159,49 @@ object Form1: TForm1
         TabOrder = 2
       end
     end
+    object DBGrid2: TDBGrid
+      Left = 2
+      Top = 41
+      Width = 662
+      Height = 299
+      Align = alClient
+      TabOrder = 1
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+      TitleFont.Style = []
+      Columns = <
+        item
+          Expanded = False
+          FieldName = #1050#1086#1076
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = #1058#1086#1074#1072#1088
+          Width = 128
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = #1050#1086#1083#1080#1095#1077#1089#1090#1074#1086
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = #1062#1077#1085#1072
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = #1054#1089#1090#1072#1090#1086#1082
+          Visible = True
+        end>
+    end
   end
   object GroupBox3: TGroupBox
-    Left = 678
+    Left = 681
     Top = 0
     Width = 456
     Height = 342
@@ -318,6 +309,7 @@ object Form1: TForm1
     end
     object N5: TMenuItem
       Caption = #1054#1090#1095#1077#1090#1099
+      OnClick = N5Click
     end
     object N4: TMenuItem
       Caption = #1047#1072#1082#1072#1079#1099
@@ -328,5 +320,10 @@ object Form1: TForm1
         Caption = #1054' '#1087#1088#1075#1088#1072#1084#1084#1077'...'
       end
     end
+  end
+  object dsQuery3: TDataSource
+    DataSet = ADOQuery1
+    Left = 976
+    Top = 472
   end
 end
